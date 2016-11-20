@@ -1,0 +1,21 @@
+{
+  "name": "todoir",
+  "description": "To do app",
+  "main": "index.js",
+  "authors": [
+    "owlblinked"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/uamanager/todoir",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "www"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
