@@ -1,34 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="app">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles/app.css">
+    <base href="/">
 </head>
-<body data-ng-controller="AppController">
+<body>
 
     <div class="wrapper">
 
-        <header class="header">
-            <span id="date" class="header__title">Today is {{today | date: 'dd.MM.yy'}}</span>
-        </header>
+        <main class="main"
+              ng-view
+        >
 
-        <main class="main">
-
-            <p>I should do:</p>
-            <form class="main__input">
-                <input type="text" ng-model="fieldToDo" placeholder="I need ..." class="main__text">
-                <input class="main__btn" type="button" ng-click="addToDo()" ng-disabled="fieldToDo.length < 3" value="+">
-            </form>
-
-            <div class="main__prime-list">
-                <ul>
-                    <li ng-repeat="todo in todos">
-                        <input class="list__done" type="checkbox" ng-model="todo.done">
-                        <p class="list__text">{{todo.text}}</p>
-                    </li>
-                </ul>
-            </div>
 
         </main>
 
@@ -38,5 +23,6 @@
 
     </div>
     <script src="scripts/app.js"></script>
+    <script src="templates/templates.js"></script>
 </body>
 </html>
