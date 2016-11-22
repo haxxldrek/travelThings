@@ -1,0 +1,69 @@
+<div class="form__wrapper"
+     ng-controller="dataRequestFormCtrl"
+>
+    <form action="get"
+          class="form"
+          novalidate
+    >
+        <div class="form-group">
+            <label for="name">Цель</label>
+            <input type="text"
+                   class="form-control"
+                   id="name"
+                   ng-model="vm.dataRequestForm.goal"
+                   required
+            >
+            <!--<p>Вы не заполнили обязательное поле.</p>-->
+        </div>
+        <div class="form-group">
+            <label for="fromCountry">Откуда</label>
+            <input type="text"
+                   class="form-control"
+                   id="fromCountry"
+                   ng-model="vm.dataRequestForm.fromCountry"
+                   required
+            >
+            <!--<p>Вы не заполнили обязательное поле.</p>-->
+        </div>
+        <div class="form-group">
+            <label for="toCountry">Куда</label>
+            <input type="text"
+                   class="form-control"
+                   id="toCountry"
+                   ng-model="vm.dataRequestForm.toCountry"
+                   required
+            >
+            <!--<p>Вы не заполнили обязательное поле.</p>-->
+        </div>
+        <div class="form-group">
+            <label for="date">Дата</label>
+            <input type="date"
+                   class="form-control"
+                   id="date"
+                   ng-model="vm.dataRequestForm.date"
+                   required
+            >
+            <!--<p>Вы не заполнили обязательное поле.</p>-->
+        </div>
+        <div class="form-group">
+            <label for="object">Объект</label>
+            <input type="text"
+                   class="form-control"
+                   id="object"
+                   ng-model="vm.dataRequestForm.object"
+                   required
+            >
+            <!--<p>Вы не заполнили обязательное поле.</p>-->
+        </div>
+        <div class="form-group">
+            <label for="comments">Комментарии</label>
+            <textarea
+                    class="form-control"
+                    id="comments"
+                    ng-model="vm.dataRequestForm.comments"
+            ></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+
+    </form>
+</div>

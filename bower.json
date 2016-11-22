@@ -1,0 +1,20 @@
+{
+  "name": "Some Name",
+  "description": "app",
+  "main": "index.js",
+  "authors": [
+    "owlblinked"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "www"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
