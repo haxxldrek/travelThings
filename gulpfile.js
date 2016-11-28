@@ -7,7 +7,7 @@ var config = {
     styles: {
         input: [
             './bower_components/angular/angular-csp.css',
-            './app/styles/app.scss'
+            './app/styles/*.scss'
         ],
         name: 'app.css',
         output: './www/styles'
